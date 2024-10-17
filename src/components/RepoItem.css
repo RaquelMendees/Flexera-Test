@@ -1,0 +1,84 @@
+/* Individual repository card styling */
+.repo-card {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+  max-height: 450px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+/* Hover effect for the card */
+.repo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Avatar image styling */
+.repo-card .avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+  border: 3px solid #ff69b4;
+}
+/* Repository info and text content */
+.repo-card .repo-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  width: 600px;
+  flex-direction: column;
+}
+
+/* Repository name and description styles */
+.repo-card .repo-info h2 {
+  overflow-wrap: anywhere;
+  font-size: 1.3rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.repo-card .repo-info p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+/* Toggle visibility button */
+.toggle-visibility {
+  background-color: #ff69b4;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: auto;
+}
+
+/* Button hover effect */
+.toggle-visibility:hover {
+  background-color: #ff1493;
+}
+
+/* Repository details section styling */
+.repository-details {
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 15px;
+}
+
+@media only screen and (max-width: 700px) {
+  .repo-card .repo-info {
+    width: 80%;
+  }
+}
